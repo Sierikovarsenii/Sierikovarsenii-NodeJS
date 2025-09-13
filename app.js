@@ -117,6 +117,8 @@ app.use((error, req, res, next) => {
     res.redirect('/500');
 });
 
+console.log('1');
+
 mongoose.connect(MONGODB_URI)
 .then(result => {
     // https
